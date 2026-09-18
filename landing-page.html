@@ -2,15 +2,87 @@
 <html>
 	<head>
 		<title>Landing Page</title>
-
-		<link rel="stylesheet" href="styles.css">
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
 	</head>
 
 	<body>
 		<!--Page Content-->
+	<main id="main">
+      <nav id="nav">
+        <img src="assets\logo-blue-160x160-1.png" alt="logo" />
+        <button class="btn button-1">Contact Us</button>
+      </nav>
+
+      <div class="container main-txt">
+        <h1>Integrated </br><span>Marketing Services</span></h1>
+        <p>We turn your marketing plans into action by building on your ideas and executing initiatives alongside you and your team. Get a complete department that can pivot to different areas of marketing based on your needs.</p>
+      </div>
+    </main>
+
+
+
+
+
+    <section class="content">
+      <div class="section-1 container">
+        <div class="section-1-txt">
+            <h2>We're experts with <span>modern</span></br> <span>marketing tools</span>, so you</br> don't have to be!</h2>
+
+            <p>With hands-on experience in B2B's most innovative apps and tools, we take a data-driven approach to continually improve prospect engagement. Whether we work directly out of your platform or provide our insights manually, you always get full visibility into the process.</p>
+        </div>
+             
+        <div  class="section-1-img">
+              <img id="section-1-img" src="assets\Marketing_Tools.svg" alt="web related logos flowing in infinity symbol">
+        </div>
+       
+      </div>
+   
+
+   
+      <div class="section-2">
+        <div  class="section-2-img container">
+            <img id="section-2-img" src="assets\Complete-Department-Marketing.png" alt="people peering out of mail-box shaped">
+        </div>
+
+        <div class="section-2-txt">
+            <h2><span>The best way</span> to build a marketing team</h2>
+
+                <p>With EBQ, you're not just hiring a marketing specialist. You're getting an entire marketing department at a fraction of the cost and effort of hiring internally.</p>
+                <p> For each project, we provide: a Success Manager to drive high-level strategy, a Project Manager to oversee day-to-day operations, and one or more Specialists working diligently to amplify your brand.</p>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container ">
+        <div class="footer-content"> 
+            <p id="footer-txt">
+                Looking to take your <span>marketing to the next level?</span>
+			</p>
+            <button class="btn button-2">Contact Us</button>
+        </div>
+     </div>
+
+       
+    </footer>
+
+
 
 		<script type="text/javascript">
-			// Event listener JS goes here
+			
+			  const buttons = document.querySelectorAll('.btn');
+     
+	  buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    alert("Hello! Welcome to the contact form, please leave the following information so we can reach you.");
+  });
+});
+
 		</script>
 	</body>
-</html>
+	</html>
